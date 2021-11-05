@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
+import { GitDataModule } from './git-data/git-data.module';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 @Module({
-  imports: [],
+  imports: [GitDataModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [],
+  exports: [],
 })
 export class AppModule {}
