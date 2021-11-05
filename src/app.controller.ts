@@ -11,11 +11,12 @@ export class AppController {
   @Get()
   Hello(): Routes {
     return {
-      last25commitsFromBranch: 'nodejs-node-commits/last25commits/:branch',
+      last25commitsFromBranch:
+        'https://nodejs-node-commits.herokuapp.com/last25commits/:branch',
       last25commitsFromBranchOnlyMessage:
-        'nodejs-node-commits/last25commits/:branch/only-message',
+        'https://nodejs-node-commits.herokuapp.com/last25commits/:branch/only-message',
       last25commitsFromBranchOnlyHash:
-        'nodejs-node-commits/last25commits/:branch/only-hash',
+        'https://nodejs-node-commits.herokuapp.com/last25commits/:branch/only-hash',
     };
   }
 }
